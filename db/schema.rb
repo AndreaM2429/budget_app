@@ -23,13 +23,13 @@ ActiveRecord::Schema[7.1].define(version: 2023_10_16_175417) do
     t.index ["author_id"], name: "index_categories_on_author_id"
   end
 
-  create_table "category_movemets", force: :cascade do |t|
+  create_table "category_movements", force: :cascade do |t|
     t.bigint "category_id"
     t.bigint "movements_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["category_id"], name: "index_category_movemets_on_category_id"
-    t.index ["movements_id"], name: "index_category_movemets_on_movements_id"
+    t.index ["category_id"], name: "index_category_movements_on_category_id"
+    t.index ["movements_id"], name: "index_category_movements_on_movements_id"
   end
 
   create_table "movements", force: :cascade do |t|
@@ -60,7 +60,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_10_16_175417) do
   end
 
   add_foreign_key "categories", "users", column: "author_id"
-  add_foreign_key "category_movemets", "categories"
-  add_foreign_key "category_movemets", "movements", column: "movements_id"
+  add_foreign_key "category_movements", "categories"
+  add_foreign_key "category_movements", "movements", column: "movements_id"
   add_foreign_key "movements", "users", column: "author_id"
 end

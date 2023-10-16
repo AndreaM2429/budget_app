@@ -88,7 +88,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Database based on a this [ERD](app/assets/images/budgetApp.drawio.png)**
+- **Database based on this [ERD](app/assets/images/budgetApp.drawio.png)**
 
 - **Models for each of the tables in the database**
 
@@ -98,7 +98,7 @@
 
 - **Devise gem to manage authentication**
 
-- **Letter_opener to manage confirmation amils**
+- **Letter_opener to manage confirmation emails**
 
 - **Bullet gem to controll and prevent n+1 problems**
 
@@ -113,8 +113,8 @@ This repository includes files with Ruby lenguage.
 
 In order to run this project you need to have install:
 - Ruby check [this](https://www.ruby-lang.org/en/) to install it.
-- Rails check [this](https://www.postgresql.org/) to install it.
-- Postgresql check [this](https://guides.rubyonrails.org/) to install it.
+- Rails check [this](https://guides.rubyonrails.org/) to install it.
+- Postgresql check [this](https://www.postgresql.org/) to install it.
 - Code editor
 
 ### Setup

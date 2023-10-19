@@ -4,6 +4,6 @@
     <span><%= movement.movements.created_at.strftime("%d %b %Y") %></span>
   </div>
   <div class="d-flex j-end">
-    <span><%= number_with_precision(movement.movements.amount, precision: 2) %></span>
+    <span class="family-head">$<%= number_with_precision(movement.movements.amount, precision: 2) %></span>
   </div>
 </div>

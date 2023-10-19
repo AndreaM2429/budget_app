@@ -159,6 +159,10 @@ form {
   border-right: none;
 }
 
+.form-input::placeholder {
+  font-size: 16px;
+}
+
 .fancy-file {
   display: none;
 }

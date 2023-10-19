@@ -1,1 +1,13 @@
-categories#index
+<section class="content-wrap">
+
+  <%= render partial: 'partials/menu' %>
+
+  <div class="d-flex-col category-container a-center">
+    <%= render partial: 'partials/category_card', collection: @categories, as: :category %>
+  </div>
+
+  <div class="d-flex j-center green-container">
+    <%= link_to 'Add new category', new_category_path, class: "d-flex btn-green family-general" %>
+  </div>
+
+</section>

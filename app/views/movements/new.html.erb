@@ -1,0 +1,15 @@
+<%= render partial: 'partials/menu' %>
+
+<%= form_with(model: @movement, url: category_movements_path(params[:category_id])) do |f| %>
+
+  <div class="d-flex-col field a-center">
+    <%= f.text_field :name, required: true, placeholder: "Movement name", class: "form-input family-general" %>
+
+    <%= f.text_field :amount, :required => true, type: 'number', step: '0.01', placeholder: "Amount", class: "form-input family-general" %>
+
+    <%= f.collection_select :category, @categories, :id, :name %>
+
+    <%= f.submit "Save category", class: "btn-submit" %>
+  </div>
+
+<% end %>

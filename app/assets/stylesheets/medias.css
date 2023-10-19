@@ -1,0 +1,32 @@
+@media (min-width: 480px) {
+  .btn-seeming {
+    max-width: 440px;
+  }
+
+  .category-card {
+    width: 85%;
+  }
+}
+
+@media (min-width: 768px) {
+  .ul-nav {
+    justify-content: space-around;
+  }
+
+  .form-input,
+  .file-container,
+  .btn-submit,
+  #movement_category {
+    width: 65%;
+  }
+
+  .category-card,
+  .movement-head,
+  .movement-card {
+    width: 70%;
+  }
+
+  .btn-green {
+    max-width: 572px;
+  }
+}

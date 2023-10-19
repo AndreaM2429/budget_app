@@ -3,10 +3,8 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-  resources :users, only: [:index] do
-    resources :categories do
-      resources :movements
-    end
+  resources :categories do
+    resources :movements
   end
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

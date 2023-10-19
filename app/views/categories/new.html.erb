@@ -1,0 +1,34 @@
+<%= render partial: 'partials/menu' %>
+<%= form_with(model: @category, url: categories_path(@category)) do |f| %>
+
+  <div class="d-flex-col field a-center">
+    <%= f.text_field :name, required: true, placeholder: "Category name", class: "form-input family-general" %>
+    
+    <div class="file-container">
+      <%= f.label :icon, class: "d-flex gap" do %>
+        <span class="d-flex j-center fancy-file-button family-general">Select file</span>
+        <span class="d-flex fancy-file-name family-general color-font-general">Any file selected</span>
+      <% end %>
+      <%= f.file_field :icon, required: true, class: "fancy-file" %>
+    </div>
+    
+    <%= f.submit "Save category", class: "btn-submit" %>
+  </div>
+
+<% end %>
+
+<script>
+  const files = document.querySelectorAll('.fancy-file')
+  Array.from(files).forEach(
+    f => {
+      f.addEventListener('change', e => {
+        const span = document.querySelector('.fancy-file-name')
+        if(f.files.length == 0) {
+          span.innerHTML = "Any file selected"
+        }else {
+          span.innerHTML = f.files[0].name
+        }
+      })
+    }
+  )
+</script>

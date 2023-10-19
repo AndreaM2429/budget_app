@@ -28,6 +28,8 @@
 
 **Budget App** is a Ruby on Rails mobile web application where you can manage your budget, you have a list of transactions associated with a category, it is a way you can see how much money have you spent and on what. In order to use it you need to log in so the data maintain private.
 
+In this project the design was taken from [this guidelines](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=), the original author is Gregoire Vella and you can find him on [Behance](https://www.behance.net/gregoirevella). I use this design according to the [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/).
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -94,13 +96,23 @@
 
 - **Routes and controllers**
 
-- **Views**
-
 - **Devise gem to manage authentication**
 
 - **Letter_opener to manage confirmation emails**
 
 - **Bullet gem to controll and prevent n+1 problems**
+
+- **Splash screen**
+
+- **Home page (categories page)**
+
+- **Sign up and log in pages**
+
+- **Transactions page**
+
+- **Forms to add new categories and movements"**
+
+- **Mobile design with 2 querries for desktop version**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -137,18 +149,30 @@ You need to open the terminal and and navigate to the clone repository, run the 
 ```
 Navigate to http://localhost:3000 create an account and see the functional app.
 
-To check the linters you can use the command:
+To check the linters you can use the commands:
 
+Ruby on Rails linters
 ```sh
   rubocop
 ```
 
+Stylelintrc linters
+```sh
+  npx stylelint "**/*.{css,scss}"
+```
+
 To fix the linter use any of the following options: 
 
+Ruby on Rails
 ```sh
   rubocop --fix
   rubocop -a
   rubocop -A
+```
+
+Stylelintrc
+```sh
+  npx stylelint "**/*.{css,scss}" --fix
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -169,14 +193,9 @@ To fix the linter use any of the following options:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Splash screen: simple page with the name of the app, and links to the sign up and log in pages.**
-- [ ] **Sign up and log in pages**
-- [ ] **Home page (categories page)**
-- [ ] **Transactions page**
-- [ ] **"Add a new category" page**
-- [ ] **"Add a new transaction" page**
 - [ ] **Create unit and integration tests**
-- [ ] **Styles from Behance**
+- [ ] **Record a video presentation**
+- [ ] **Deploy**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -6,4 +6,13 @@ class ApplicationController < ActionController::Base
     categories_path
   end
 
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.permit(:sign_up, keys: %i[name])
+  end
+
+  def configure_devise_parameters
+    devise_parameter_sanitizer.permit(:sign_up) do |user|
+      user.permit(:name)
+    end
+  end
 end

@@ -1,15 +1,197 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.cdnfonts.com/css/zeyada');
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6f8;
+}
+
+.family-head {
+  font-family: 'Proxima Nova Condensed', sans-serif;
+  font-weight: bolder;
+}
+
+.family-general {
+  font-family: 'Proxima Nova Condensed', sans-serif;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.j-end {
+  justify-content: right;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.font-nav {
+  font-size: 16px;
+  color: white;
+}
+
+img {
+  width: 90px;
+  height: 90px;
+}
+
+.color-font-general {
+  color: #434b54;
+}
+
+/* Links to buttons */
+
+.btn-seeming {
+  width: 90%;
+  height: 40px;
+  border-radius: 7px;
+  text-decoration: none;
+  background-color: rgb(197, 197, 196);
+  color: #434b54;
+  justify-content: center;
+}
+
+.btn-seeming:hover {
+  background-color: #3776c2;
+  color: white;
+}
+
+.btn-green {
+  width: 90%;
+  height: 45px;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  font-size: 20px;
+}
+
+/* Buttons to Links */
+
+.link-seeming {
+  border: none;
+  background-color: transparent;
+}
+
+.font-title {
+  font-family: 'Zeyada', sans-serif;
+  font-size: 60px;
+  font-weight: lighter;
+  color: #434b54;
+}
+
+/* Submit buttons */
+
+.btn-submit {
+  width: 90%;
+  height: 40px;
+  border-radius: 7px;
+  text-decoration: none;
+  background-color: #3776c2;
+  color: white;
+  justify-content: center;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-submit:hover {
+  background-color: #7fb523;
+}
+
+.ul-nav {
+  background-color: #3776c2;
+  list-style: none;
+  justify-content: space-between;
+  padding: 11px;
+  height: 30px;
+  color: white;
+  font-size: 20px;
+}
+
+.ul-nav a,
+.ul-nav input {
+  color: white;
+  align-items: center;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+.form-input,
+.field_with_errors input,
+.file-container {
+  width: 90%;
+  height: 30px;
+  padding: 10px;
+  border-top: 1px solid #ebecee;
+  border-bottom: 1px solid #ebecee;
+  border-left: none;
+  border-right: none;
+}
+
+.fancy-file {
+  display: none;
+}
+
+.fancy-file + label {
+  display: flex;
+}
+
+.gap {
+  gap: 5px;
+}
+
+.fancy-file-name {
+  background-color: #bdbdbd;
+  width: 200px;
+  height: 25px;
+  padding-left: 7px;
+  border-radius: 5px;
+}
+
+.fancy-file-button {
+  background-color: #3776c2;
+  border-radius: 3px;
+  width: 80px;
+  height: 25px;
+  color: white;
+}
+
+#movement_category {
+  width: 90%;
+  height: 30px;
+  color: #434b54;
+  font-family: 'Proxima Nova Condensed', sans-serif;
+  font-size: 18px;
+  margin: 10px 0;
+}

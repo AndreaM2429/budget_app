@@ -1,0 +1,9 @@
+<div class="movement-card grid-container-2 family-general color-font-general">
+  <div class="d-flex-col">
+    <span><%= movement.movements.name %></span>
+    <span><%= movement.movements.created_at.strftime("%d %b %Y") %></span>
+  </div>
+  <div class="d-flex j-end">
+    <span><%= number_with_precision(movement.movements.amount, precision: 2) %></span>
+  </div>
+</div>

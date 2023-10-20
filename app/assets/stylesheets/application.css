@@ -91,6 +91,16 @@ img {
   font-size: 20px;
 }
 
+.btn-login:hover,
+.btn-seeming:hover {
+  background-color: #7fb523;
+  color: white;
+}
+
+.btn-green:hover {
+  background-color: #3776c2;
+}
+
 /* Buttons to Links */
 
 .link-seeming {

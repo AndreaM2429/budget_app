@@ -68,14 +68,12 @@ img {
 .btn-seeming {
   width: 90%;
   height: 40px;
-  border-radius: 7px;
   text-decoration: none;
-  background-color: rgb(197, 197, 196);
   color: #434b54;
   justify-content: center;
 }
 
-.btn-seeming:hover {
+.btn-login {
   background-color: #3776c2;
   color: white;
 }
@@ -91,6 +89,16 @@ img {
   border-width: 1px;
   border-color: white;
   font-size: 20px;
+}
+
+.btn-login:hover,
+.btn-seeming:hover {
+  background-color: #7fb523;
+  color: white;
+}
+
+.btn-green:hover {
+  background-color: #3776c2;
 }
 
 /* Buttons to Links */
@@ -159,6 +167,10 @@ form {
   border-right: none;
 }
 
+.form-input::placeholder {
+  font-size: 16px;
+}
+
 .fancy-file {
   display: none;
 }
@@ -177,6 +189,8 @@ form {
   height: 25px;
   padding-left: 7px;
   border-radius: 5px;
+  align-items: start;
+  overflow: hidden;
 }
 
 .fancy-file-button {
@@ -189,9 +203,14 @@ form {
 
 #movement_category {
   width: 90%;
-  height: 30px;
+  height: 50px;
   color: #434b54;
   font-family: 'Proxima Nova Condensed', sans-serif;
-  font-size: 18px;
-  margin: 10px 0;
+  font-size: 16px;
+  margin: 0;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #ebecee;
+  border-top: 1px solid #ebecee;
+  background-color: transparent;
 }

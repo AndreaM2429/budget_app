@@ -13,6 +13,8 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
     - [Tests](#tests)
+  - [🎥 Video presentation](#video)
+  - [🚀 Live demo](#live)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -119,6 +121,22 @@ In this project the design was taken from [this guidelines](https://www.behance.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+## 🎥 Video presentation <a name="video"></a>
+
+[Video presentation](https://youtu.be/M99eT95NvYQ)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🚀 Live demo <a name="live"></a>
+
+[Live demo](https://geldspar.onrender.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
 ## 💻 Getting Started <a name="getting-started"></a>
 
 This repository includes files with Ruby lenguage.
@@ -195,8 +213,7 @@ Stylelintrc
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Record a video presentation**
-- [ ] **Deploy**
+- [ ] **Make a desktop design**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -114,6 +114,8 @@ In this project the design was taken from [this guidelines](https://www.behance.
 
 - **Mobile design with 2 querries for desktop version**
 
+- **Unit and integrations tests**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -193,7 +195,6 @@ Stylelintrc
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Create unit and integration tests**
 - [ ] **Record a video presentation**
 - [ ] **Deploy**
 

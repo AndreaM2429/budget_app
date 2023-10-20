@@ -189,6 +189,8 @@ form {
   height: 25px;
   padding-left: 7px;
   border-radius: 5px;
+  align-items: start;
+  overflow: hidden;
 }
 
 .fancy-file-button {

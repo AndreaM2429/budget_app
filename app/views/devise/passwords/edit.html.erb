@@ -1,0 +1,19 @@
+<section>
+  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
+    <div>
+      <ul class="d-flex m0 ul-nav">
+        <li class="m0"><span class="family-general">CHANGE YOUR PASSWORD</span></li>
+        <li><%= f.submit "Change", class: "link-seeming font-nav m0 family-general" %></li>
+      </ul>
+    </div>
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+    <%= f.hidden_field :reset_password_token %>
+
+    <div class="d-flex-col field a-center">
+      <%= f.password_field :password, autofocus: true, autocomplete: "new-password", placeholder: "New password", class: "form-input family-general" %>
+
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Confirm new password", class: "form-input family-general" %>
+    </div>
+  <% end %>
+</section>

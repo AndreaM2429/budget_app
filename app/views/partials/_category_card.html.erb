@@ -1,0 +1,5 @@
+<%= link_to category_movements_path(category.id), class: "family-general no-underline color-font-general grid-container category-card" do %>
+    <%= image_tag category.icon %>
+    <div><%= category.name %> </div>
+    <span class="d-flex j-end family-head">$<%= number_with_precision(@category_totals[category.name], precision: 2) %></span>
+<% end %>

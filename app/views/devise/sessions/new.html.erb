@@ -1,0 +1,23 @@
+<section>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+	<div>
+    <ul class="d-flex m0 ul-nav">
+      <li class="material-symbols-outlined">
+          <%= link_to "arrow_back", root_path, class: "no-underline m0" %>
+      </li>
+      <li class="m0"><span class="family-general">LOGIN</span></li>
+      <li><%= f.submit "Log In", class: "link-seeming font-nav m0 family-general" %></li>
+    </ul>
+	</div>
+
+  <div class="d-flex-col field a-center">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: "form-input family-general" %>
+    <%= f.password_field :password, autocomplete: "current-password", placeholder: 'Password', class: "form-input family-general" %>
+  </div>
+<% end %>
+
+  <div class="pasword-link">
+    <%= link_to "Forgot password?", new_password_path(resource_name), class: "no-underline color-font-general family-general" %>
+  </div>
+</section
